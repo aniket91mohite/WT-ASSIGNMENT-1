@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>**Student Registration Form**</title>
+<link rel="stylesheet" href="a.css">
+        <script src = "val.js"></script>
+
+</head>
+
+
+<body>
+<script>
+function msg(){
+
+if(document.getElementById("fname").value == "")
+	alert("First name is empty");
+
+if(document.getElementById("lname").value == "")
+	alert("Last name is empty");
+
+if(document.getElementById("id").value == "")
+	alert("Please type valid ID");
+
+if(document.getElementById("email").value == "")
+	alert("Please type valid Email id");
+
+if(document.getElementById("pass1").value == "")
+	alert("Enter valid Password");
+
+if(document.getElementById("dob").value == "")
+	alert("Enter valid DOB");
+}
+
+</script>
+	<header color=white >Student Registration Form</header><br>
+<div class="form1">
+	<form name="form1" id="form14" action="Stud" method="post"  >
+	
+
+<table>
+<tr>
+<td>Student ID:</td><td><input type="number" name="id" placeholder="enter id" pattern="0-9" required="required" id="id"></input></td>
+<tr>
+
+<tr>
+<td>First Name:</td><td><input type="text" placeholder="Enter first name here" name="fname" id="fname"></td>
+</tr>
+<tr>
+<td>Last Name:</td><td><input type="text" placeholder="Enter last name here" name="lname" id="lname"></td>
+</tr>
+<tr>
+<td>Password:</td><td><input type="password" placeholder="Enter password" id="pass1" name="pass1" ></td>
+</tr>
+
+<tr>
+<td>Date Of Birth:</td><td><input type="date" name="dob" placeholder="yyyy-mm-dd" id="dob"></td>
+</tr>
+<tr>
+<td>E-mail:</td><td><input type="email" name="email" id="email" placeholder="Enter mail"></td>
+</tr>
+
+
+
+
+
+
+
+
+</table>
+
+
+
+<br>
+	<input type="submit" name="op" value="submit" id="subm" onclick="msg();">
+	<input type="submit" name="op" value="update" id="subm" onclick="msg();">
+	
+	</form>
+</div>
+</body>
+
+</html>
